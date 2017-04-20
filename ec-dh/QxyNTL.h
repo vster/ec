@@ -15,11 +15,11 @@ public:
 	{ x  = conv<ZZ_p>(xx); y = conv<ZZ_p>(yy); }
 	void getQxy ( ZZ xx, ZZ yy )
 	{ x  = conv<ZZ_p>(xx); y = conv<ZZ_p>(yy); }
-	ZZ_p Qxy::putx( )
-		{ return x; }
-	ZZ_p Qxy::puty( )
-		{ return y; }
-	void putQxy ( )
+    ZZ_p putx( )
+        { return x; }
+    ZZ_p puty( )
+        { return y; }
+    void putQxy ( )
 	{	cout << "(" << x << "," << y << ")"; } 
 	bool operator == ( Qxy q2 );
 	Qxy operator + ( Qxy q2 );
