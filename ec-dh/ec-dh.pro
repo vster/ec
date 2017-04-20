@@ -15,8 +15,7 @@ HEADERS += \
     QxyNTL.h
 
 INCLUDEPATH += \
-    ../../WinNTL-9_8_1/include
+    ../../include
 
 LIBS += \
-    -L../../WinNTL-9_8_1/lib -lntl \
-    -L/usr/local/lib -lntl
+    -L../../lib -lntl
