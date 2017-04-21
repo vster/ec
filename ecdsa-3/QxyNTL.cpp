@@ -13,11 +13,13 @@ void Qxy::putQxy ( )
 {	
 	cout << "\nx (dec) = \n" << x << endl;
 	cout << "\nx (hex) = \n"; 
-	ShowZZInHex(conv<ZZ>(x));
+    ZZ zx = conv<ZZ>(x);
+    ShowZZInHex(zx);
 	cout << endl;
 	cout << "\ny (dec) = \n" << y; cout << endl;
 	cout << "\ny (hex) = \n"; 
-	ShowZZInHex(conv<ZZ>(y));
+    ZZ zy = conv<ZZ>(y);
+    ShowZZInHex(zy);
 	cout << endl;
 } 
 
