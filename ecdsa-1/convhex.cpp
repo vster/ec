@@ -136,7 +136,7 @@ void show_hex ( char x_hex[], long len )
 	cout  << endl;
 }
 // Show big dec in hex 
-void show_dec_in_hex ( ZZ &x, long len )
+void show_dec_in_hex (ZZ &x, long len )
 {
 	char x_hex[maxhexlen];
 	// cout << "\nlen = " << NumBits( x ) << endl;
