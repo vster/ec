@@ -17,19 +17,23 @@ public:
 	{ x  = conv<ZZ_p>(xx); y = conv<ZZ_p>(yy); }
 	void getQxy ( ZZ xx, ZZ yy )
 	{ x  = conv<ZZ_p>(xx); y = conv<ZZ_p>(yy); }
-	ZZ_p Qxy::putx( )
-		{ return x; }
-	ZZ_p Qxy::puty( )
-		{ return y; }
-	void putQxy ( )
-	{	
-		cout << "\nx (dec) = \n" << x << endl;
-		cout << "\nx (hex) = \n"; show_dec_in_hex (conv<ZZ>(x), L);
-		cout << "\ny (dec) = \n" << y; cout << endl;
-		cout << "\ny (hex) = \n"; show_dec_in_hex (conv<ZZ>(y), L);	
-		cout << endl;
-		// cout << "(" << x << "," << y << ")"; 
-	} 
+    ZZ_p putx( )
+        { return x; }
+    ZZ_p puty( )
+        { return y; }
+    void putQxy ( )
+    {
+        cout << "\nx (dec) = \n" << x << endl;
+        cout << "\nx (hex) = \n";
+        ZZ zx = conv<ZZ>(x);
+        show_dec_in_hex (zx, L);
+        cout << "\ny (dec) = \n" << y; cout << endl;
+        cout << "\ny (hex) = \n";
+        ZZ zy = conv<ZZ>(y);
+        show_dec_in_hex (zy, L);
+        cout << endl;
+        // cout << "(" << x << "," << y << ")";
+    }
 	bool operator == ( Qxy q2 );
 	Qxy operator + ( Qxy q2 );
 	Qxy double_p ( );
