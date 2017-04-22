@@ -18,6 +18,6 @@ INCLUDEPATH += \
     ../../include
 
 LIBS += \
-    -L../../lib -lntl
+    -L../../lib -lntl -gmp
 
 
